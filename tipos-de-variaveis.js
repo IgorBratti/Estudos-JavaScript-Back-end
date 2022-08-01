@@ -1,43 +1,43 @@
-
-//Tipos de Variavéis
-
-// Tipo Number
-
-const primeiroNumero = 2.2;
-const segundoNumero = 1;
-
-const soma = primeiroNumero * segundoNumero;
-
-console.log(soma);
-
-// tipo String (Texto)
-
-const perguntaNome = "Meu nome é ";
-const nome = "Igor";
-
-console.log(perguntaNome + nome);
-
+// Tipo var (Funciona em qualquer parte do código)
 /*
-// Unicode
-const cifrao = '\u0024'
-const aMaiusculo = '\u0041'
-const tique = '\u2705'
-const hiragana = '\u3041'
+var altura = 10;
+var comprimento = 15;
 
-console.log(cifrao)
-console.log(aMaiusculo)
-console.log(tique)
-console.log(hiragana)
+var area = altura * comprimento // var pode ser declara antes ou depois
+
+console.log(area)
+
+var area; // a var não precisa ser declarada porém é uma boa pratica
 */
+// Tipo let
+/*
+let forma = "Retângulo";
+let altura = 5;
+let comprimento = 10;
 
-// Tipo Boolean
+let area;
 
-comparacaoNumber1 = 4;
-comparacaoNumber2 = 8;
+if(forma === "Retângulo") {
+    area = altura * comprimento;
+} else {
+    area = (altura * comprimento) / 2;
+}
 
-console.log(comparacaoNumber1 === comparacaoNumber2);
+console.log(area);
 
-comparacaoString1 = "Igor"
-comparacaoString2 = "igor"
+*/
+// Tipo const (uma vez usada, não da para alterar)
 
-console.log(comparacaoString1 === comparacaoString2);
+const forma = "Quadrado"
+const altura = 5;
+const comprimento = 10;
+
+let area; // não pode ser const pois pode ter diferente valores
+
+if (forma === "Quadrado") {
+    area = altura * comprimento
+} else { 
+    area = (altura * comprimento) / 2;
+}
+
+console.log(area);
