@@ -1,3 +1,91 @@
+function say(texto) {
+    console.log(texto)
+}
+
+say("Igor");
+say("Henrique Bratti")
+
+function soma1() {
+    return 2 + 2;
+}
+
+say(soma1())
+
+// parâmetros de função
+
+function soma2 (numero1, numero2) {
+    return numero1 + numero2;
+}
+
+say(soma2(10, 5))
+
+function nomeEIdade (nome, idade) {
+    return `Meu nome é ${nome} e tenho ${idade} anos`
+}
+say(nomeEIdade("Igor", 26))
+
+function multipicacao(numero1, numero2) {
+    return numero1 * numero2;
+}
+
+say(multipicacao(soma2(5, 5), soma2(10, 2)));
+
+// Função sem retorno e sem parâmetro
+function cumprimentar(){
+    console.log('oi gente!')
+   }
+   
+   cumprimentar()
+
+// Função sem retorno, com parâmetro
+
+function cumprimentar2(pessoa){
+    console.log(`oi gente! Meu nome é ${pessoa}`)
+   }
+   
+   cumprimentar2("Helena")
+
+// Função com retorno, sem parâmetro
+
+function cumprimentar(){
+    return 'Oi gente!'
+   }
+   
+   function cumprimentaPessoa(nomePessoa) {
+    console.log(`${cumprimentar()} Meu nome é ${nomePessoa}`)
+   }
+   
+   cumprimentaPessoa('Paula') // “Oi gente! Meu nome é Paula”
+
+
+const soma = function(num1, num2) {
+    return num1 + num2;
+}
+
+say(soma(1, 3));
+
+// arrow function (ES6)
+
+const arrowFunction = nome => `meu nome é ${nome}`;
+const somaa = (num1, num2) => num1 + num2;
+
+say(somaa(15, 20))
+
+// com + de uma linha
+
+const somaNumeros = (num1, num2) => {
+    if (num1 || num2 > 10) {
+        return "somente numero de 1 a 9"
+    } else {
+        return num1 + num2
+    }
+}
+
+say(somaNumeros(10, 9))
+
+/*
+Para saber mais: Mais sobre funções
+
 As funções ajudam muito no desenvolvimento de um código, pois colaboram para a separação de trechos de código com funções específicas, tornando-o menor e mais legível, O JavaScript nos oferece algumas funções prontas, como é o caso de funções matemáticas (Math em inglês), alguns exemplos são:
 
 Math.round(): Faz o arredondamento (round em inglês) de um número de ponto flutuante para o inteiro mais próximo.
@@ -34,3 +122,4 @@ Math.random() retorna 0.7456916270759015
 Math.random() retorna 0.15449802102729304
 Math.random() retorna 0.4214269561951203
 Para ver mais funções matemáticas: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math#description
+*/
