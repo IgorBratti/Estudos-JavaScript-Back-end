@@ -26,6 +26,36 @@ console.log(notas) // [ 5, 1, 6.5, 8, 7 ]
 
  console.log(`A média é ${media}`) // A média é 5.125
 
+ 
+
+// dividindo arrays
+
+const nomes = [ "Carlos", "Igor", "Amanda", "Emanuel", "Jose",
+"Fabiano", "FAbiana", "Augusto", "Victor", "Adrian", "Neia"]
+
+const sala1 = nomes.slice(0,nomes.length/2)
+const sala2 = nomes.slice(nomes.length/2)
+
+console.log(`Alunos da sala 1: ${sala1}`)
+console.log(`Alunos da sala 2: ${sala2}`)
+
+// Incluir em arrays e remover
+
+const listaDeChamada = ["Carlos", "Igor", "Amanda", "Emanuel"];
+                  // apartir de indice começar, quantos indices, e se deseja substituir
+listaDeChamada.splice(1,2, "Carlitos");
+
+console.log(`Lista de Chamada atualizada: ${listaDeChamada}`)
+
+// juntar arrays
+
+const casa1 = ["Amanda", "TAdeu"]
+const casa2 = ["Igor", "Bruna"]
+
+const casasUnificadas = casa1.concat(casa2)
+
+console.log(casasUnificadas);
+
  /*
 concat()
 Junta dois arrays, colocando o array passado como argumento,
