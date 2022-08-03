@@ -1,7 +1,7 @@
               //0       1
 const nomes = ['João', 'Juliana', 'Ana', 'Caio', 'Lara', 'Marjorie', 'Guilherme', 'Aline', 'Fabiana', 'Andre', 'Carlos', 'Paulo', 'Bia', 'Vivian', 'Isabela', 'Vinícius', 'Renan', 'Renata', 'Daisy', 'Camilo']
 
-console.log("tamanho da array:", nomes.length)
+console.log("tamanho da array:", nomes.length) // tamanho da array: 20
                         //0, 10
 const sala1 = nomes.slice(0,nomes.length/2)
                         //10
